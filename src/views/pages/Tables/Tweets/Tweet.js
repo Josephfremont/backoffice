@@ -128,7 +128,7 @@ const Tweets = () => {
                 {currentTweets.map((tweet) => (
                   <CTableRow key={tweet._id}>
                     <CTableDataCell>{tweet.content}</CTableDataCell>
-                    <CTableDataCell>{tweet.author}</CTableDataCell>
+                    <CTableDataCell>{tweet.author != null ? tweet.author.username : ""}</CTableDataCell>
                     <CTableDataCell>{tweet.likes.length}</CTableDataCell>
                     <CTableDataCell>{tweet.retweets.length}</CTableDataCell>
                     <CTableDataCell>{new Date(tweet.createdAt).toLocaleDateString("fr-FR")}</CTableDataCell>

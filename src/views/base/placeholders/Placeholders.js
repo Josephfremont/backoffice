@@ -46,7 +46,7 @@ const Placeholders = () => {
                   </CCardBody>
                 </CCard>
                 <CCard style={{ width: '18rem' }}>
-                  <svg
+                  {/* <svg
                     className="card-img-top"
                     width="100%"
                     height="180"
@@ -58,7 +58,7 @@ const Placeholders = () => {
                   >
                     <title>Placeholder</title>
                     <rect width="100%" height="100%" fill="#868e96"></rect>
-                  </svg>
+                  </svg> */}
                   <CCardBody>
                     <CPlaceholder as={CCardTitle} animation="glow" xs={7}>
                       <CPlaceholder xs={6} />

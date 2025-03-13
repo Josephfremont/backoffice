@@ -115,9 +115,8 @@ const Users = () => {
             <CTable>
               <CTableHead color="light">
                 <CTableRow>
-                  <CTableHeaderCell scope="col">id</CTableHeaderCell>
-                  <CTableHeaderCell scope="col">email</CTableHeaderCell>
                   <CTableHeaderCell scope="col">Username</CTableHeaderCell>
+                  <CTableHeaderCell scope="col">email</CTableHeaderCell>
                   <CTableHeaderCell scope="col">Bio</CTableHeaderCell>
                   <CTableHeaderCell scope="col">Administrateur</CTableHeaderCell>
                   <CTableHeaderCell scope="col">Followers</CTableHeaderCell>
@@ -128,9 +127,8 @@ const Users = () => {
               <CTableBody>
                 {currentUsers.map((user) => (
                   <CTableRow key={user._id}>
-                    <CTableDataCell>{user._id}</CTableDataCell>
-                    <CTableDataCell>{user.email}</CTableDataCell>
                     <CTableDataCell>{user.username}</CTableDataCell>
+                    <CTableDataCell>{user.email}</CTableDataCell>
                     <CTableDataCell>{user.bio || "Aucune bio"}</CTableDataCell>
                     <CTableDataCell>{user.admin ? "Oui" : "Non"}</CTableDataCell>
                     <CTableDataCell>{user.followers.length}</CTableDataCell>
